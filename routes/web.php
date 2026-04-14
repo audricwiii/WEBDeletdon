@@ -30,3 +30,4 @@ Route::get('/about', function(){
 Route::get('/store', function(){
     return view('store');
 })->name('store');
+Route::get('/store', [StoreController::class, 'show'])->name('store');
